@@ -127,20 +127,19 @@ function showBlock(blockNum){
             document.getElementById("blockImageBox").src = "blockImg/block0.jpg";
             break;
         case '1':
-            $('#blockImageBox').src = "blockImg/block1.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/blcok1.jpg";
             break;
         case '2':
-            $('#blockImageBox').src = "blockImg/block2.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/block2.jpg";
             break;
         case '3':
-            $('#blockImageBox').src = "blockImg/block3.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/block3.jpg";
             break;
         case '4':
-            $('#blockImageBox').src = "blockImg/block4.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/block4.jpg";
             break;
         case '5':
-            $('#blockImageBox').src = "blockImg/block5.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/block5.jpg";
             break;
-    
     }
 }
