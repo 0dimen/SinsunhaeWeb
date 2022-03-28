@@ -127,7 +127,7 @@ function showBlock(blockNum){
             document.getElementById("blockImageBox").src = "blockImg/block0.jpg";
             break;
         case '1':
-            document.getElementById("blockImageBox").src = "blockImg/blcok1.jpg";
+            document.getElementById("blockImageBox").src = "blockImg/block1.jpg";
             break;
         case '2':
             document.getElementById("blockImageBox").src = "blockImg/block2.jpg";
