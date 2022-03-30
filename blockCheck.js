@@ -102,7 +102,7 @@ var my_callback = function (data) {
 
     //블럭 개수 가져옴.
     blockNum = data[0][col[0]];
-    showBlock(blockNum);
+    showBlock(parseInt(blockNum));
     
 }
 
@@ -122,24 +122,29 @@ function search(){
 }
 
 function showBlock(blockNum){
-    switch (blockNum){
-        case '0':
-            document.getElementById("blockImageBox").src = "blockImg/block0.jpg";
-            break;
-        case '1':
-            document.getElementById("blockImageBox").src = "blockImg/block1.jpg";
-            break;
-        case '2':
-            document.getElementById("blockImageBox").src = "blockImg/block2.jpg";
-            break;
-        case '3':
-            document.getElementById("blockImageBox").src = "blockImg/block3.jpg";
-            break;
-        case '4':
-            document.getElementById("blockImageBox").src = "blockImg/block4.jpg";
-            break;
-        case '5':
-            document.getElementById("blockImageBox").src = "blockImg/block5.jpg";
-            break;
+    
+
+
+    var showNum = blockNum%10; //showNum은 보여줘야하는 블럭 숫자. 쿠폰 단위로 나눈 값.
+    var couponNum = (blockNum - showNum)/10;
+    document.getElementById("couponNum").textContent = couponNum;
+    var i;
+
+    for(i = 0; i < 10; i++){
+        var idString = 'bean' + i;
+
+        if(i>=showNum){
+            document.getElementById(idString).style.visibility = 'hidden';
+        }
+        else{
+            document.getElementById(idString).style.visibility = 'visible';
+        }
+    }
+}
+
+function setUp(){
+    for(i = 0; i < 10; i++){
+        var idString = 'bean' + i;
+        document.getElementById(idString).style.visibility = 'hidden';
     }
 }
