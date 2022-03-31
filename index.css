@@ -1,28 +1,49 @@
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0;
+  color: #362706;
+  font-family: 'Gowun Dodum', sans-serif;}
+
+.wholeBody{
+  background: #E9E5D6;
+  height: 100%;
+}
+.contentsBody{
+  margin: 0 auto;
+  max-width: 80%;
+}
+.logoBox{
+  text-align: center;
+  padding: 2% 0;
+  background: #ACB992;
+}
+
+.loginForm{
+  margin: 5% 0;
+}
 #couponBox{
-    right:0px;
-    margin-bottom: 50px;
-    padding-right: 50px;
+  margin: 4%
 }
 #couponBox>img{
     float: right;
     max-width: 10%;
     height: auto;
+  background: blue;
 }
 #couponNumBox{
     float: right;
+    padding-left: 3%;
+    font-size: 120%;
 }
 
 .grid_container{
     clear: both;
     display: grid;
-    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(5, 20%);
     max-width: fit-content;
     margin: auto;
 }
 .grid_item{
-    margin: 10px;
-    padding: 10px;
+    margin: 2%;
+    padding: 2%;
 }
 .grid_item>img{
     max-width: 100%;
