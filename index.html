@@ -12,19 +12,18 @@
 </head>
 
 <body>
-  <div class="wholeBody">
     <div class = "logoBox">
-      <h1>당신의 블럭</h1>
+      <h1>당신의 쿠폰</h1>
     </div>
 
     <div class ="contentsBody">
       <div class ="loginForm">
         <!-- 입력 폼 -->
-        <a>전화번호를 입력해주세요.</a>
-        <form name = "form1">
+        <a>전화번호를 입력해주세요. (숫자만 입력)<br>ex) 01012345678 (O) 010-1234-5678(X)</a>
+        <form id = "form1">
             전화번호 : <input type = "text" name = "id" size = "11" maxlength="11">
         </form>
-        <button id = "#loginBtn" type = "submit" onclick="search()">조회</button>
+        <button id = "loginBtn" type = "submit" onclick="search()">조회</button>
       </div>
         </br>
         <!-- 블럭 보여주는 부분 -->
@@ -49,7 +48,6 @@
             <div class="grid_item" id = "bean9"><img src="img/coffeeImg.png"></div>
         </div>
     </div>
-   </div>
       <script src="http://code.jquery.com/jquery-latest.js"></script> 
       <script src="blockCheck.js"></script>
     
