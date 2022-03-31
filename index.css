@@ -58,7 +58,7 @@ input{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     max-width: fit-content;
-    margin: auto;
+    margin: 20% auto;
 }
 .grid_item{
     margin: 2%;
