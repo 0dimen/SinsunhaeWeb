@@ -9,42 +9,46 @@
 </head>
 
 <body>
-
+  <div class = "logoBox">
     <h1>당신의 블럭</h1>
-
-    <!-- 입력 폼 -->
-    <a>전화번호를 입력해주세요.</a>
-    <form name = "form1">
-        전화번호 : <input type = "text" name = "id" size = "11" maxlength="11">
-    </form>
-    <button id = "#loginBtn" type = "submit" onclick="search()">조회</button>
-
-    </br>
-    <!-- 블럭 보여주는 부분 -->
-
-    <div class = "inline_contatiner" id="couponBox">
-        <div id="couponNumBox">
-            <a id="couponNum">0</a>
-        </div>
-        <img src= "img/couponImg.png">
-        
+  </div>
+    
+  <div class ="contentsBody">
+    <div class ="loginForm">
+      <!-- 입력 폼 -->
+      <a>전화번호를 입력해주세요.</a>
+      <form name = "form1">
+          전화번호 : <input type = "text" name = "id" size = "11" maxlength="11">
+      </form>
+      <button id = "#loginBtn" type = "submit" onclick="search()">조회</button>
     </div>
-    <div class = "grid_container" id="blockBox">
-        <div class="grid_item" id = "bean0"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean1"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean2"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean3"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean4"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean5"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean6"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean7"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean8"><img src="img/coffeeImg.png"></div>
-        <div class="grid_item" id = "bean9"><img src="img/coffeeImg.png"></div>
-    </div>
-
+      </br>
+      <!-- 블럭 보여주는 부분 -->
+  
+      <div class = "inline_contatiner" id="couponBox">
+          <div id="couponNumBox">
+              <a id="couponNum">0</a>
+          </div>
+          <img src= "img/couponImg.png">
+          
+      </div>
+      <div class = "grid_container" id="blockBox">
+          <div class="grid_item" id = "bean0"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean1"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean2"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean3"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean4"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean5"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean6"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean7"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean8"><img src="img/coffeeImg.png"></div>
+          <div class="grid_item" id = "bean9"><img src="img/coffeeImg.png"></div>
+      </div>
     
     <script src="http://code.jquery.com/jquery-latest.js"></script> 
     <script src="blockCheck.js"></script>
+  </div>
+    
 </body>
 
 </html>
