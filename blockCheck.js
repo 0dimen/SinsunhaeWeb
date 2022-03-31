@@ -139,9 +139,11 @@ function showBlock(blockNum){
     }
 }
 
+//쿠폰 박스 리프레쉬
 function setUp(){
     for(i = 0; i < 10; i++){
         var idString = 'bean' + i;
         document.getElementById(idString).style.visibility = 'hidden';
     }
+    document.getElementById("couponNum").textContent = 0;
 }
