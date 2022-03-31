@@ -54,7 +54,6 @@ var parse = function (data) {
             result[rows_idx][columns[row_idx]] = value;
         }
     }
-    console.log(result);
     return result;
 };
 
@@ -77,16 +76,13 @@ var query = function (sql, sheetName, callback) {
 }
 
 var my_callback = function (data) {
-
-    data = parse(data); // Call data parser helper function
+  if(data.table.rows.length == 0){
+    alert("해당 번호는 존재하지 않습니다.");
+      setUp();
+      return false;
+  }
   
-    // //AND THEN WHATEVER YOU WANT 
-    // for(var i = 0 ; i < datas.length; i++){
-    //     if(JSON.stringify(datas[i]) == JSON.stringify(data)) {
-    //         return false;
-    //     }
-    // }
-    
+    data = parse(data); // Call data parser helper function
     datas.push(data);
 
     // EXTRACT VALUE FOR HTML HEADER. 
@@ -115,9 +111,10 @@ function getID(){
 function search(){
     var id = getID();
     datas = [];
-
+    
     // query(sql문, 시트 이름, 콜백 함수)
     query('SELECT B WHERE A = ' + id, '신선해', 'my_callback');
+  
     
 }
 
