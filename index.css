@@ -1,10 +1,10 @@
 * {margin: 0; padding: 0;
   color: #362706;
-  font-family: 'Gowun Dodum', sans-serif;}
+  font-family: 'Gowun Dodum', sans-serif;
+background: #E9E5D6}
 
-.wholeBody{
-  background: #E9E5D6;
-  height: 100%;
+h1{
+  background: none;
 }
 .contentsBody{
   margin: 0 auto;
@@ -19,8 +19,28 @@
 .loginForm{
   margin: 5% 0;
 }
+.loginForm a{
+  display: block;
+}
+#form1{
+  margin-top: 3%;
+  display: inline-block;
+}
+input{
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #362706;
+  background: none;
+}
+#loginBtn{
+  border: none;
+  background-color: #464E2E;
+  color: #E9E5D6;
+  padding: 0.5% 1%;
+  border-radius: 5px;
+}
 #couponBox{
-  margin: 4%
+  margin: 10% 0;
 }
 #couponBox>img{
     float: right;
